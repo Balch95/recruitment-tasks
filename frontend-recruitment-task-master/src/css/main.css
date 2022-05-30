@@ -5,6 +5,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.visibilty {
+  visibility: visible !important;
+}
+
 .container {
   width: 1440px;
   display: flex;
@@ -77,6 +81,7 @@ body {
   top: 10%;
   border: solid 1px black;
   padding: 56px 95px;
+  z-index: 100;
 }
 
 .main-content .pop-up .x {
