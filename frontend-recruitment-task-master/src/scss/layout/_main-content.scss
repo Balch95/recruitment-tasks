@@ -1,0 +1,48 @@
+.main-content{
+    .image{
+        img{
+            position: relative;
+            width: 505px;
+            height: 330px;
+        }
+    }
+    .content{
+        max-width: 380px;
+        max-height: 250px;
+        h1{
+            font-size: 42px;
+            margin: 0px;
+        }
+        p{
+            font-size: $basic-font-size;
+            line-height: 24px;
+            margin: 32px 0px 24px 0px;
+        }
+        button{
+            color: #fff;
+            background-color: $prima-color;
+            font-size: $basic-font-size;
+            font-weight: 700;
+            padding: 16px 40px;
+            border-radius: 32px;
+            border: none;
+            &:hover{
+                background-color: $prima-hover-color;
+                border: none;
+            }
+        }
+        
+    }
+}
+
+@media all and (max-width: $extra-large){
+    .main-content{
+        .image{
+            img{
+                max-height: 330px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

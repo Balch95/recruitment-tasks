@@ -1,0 +1,22 @@
+.container{
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    padding: 96px 230px;
+    .col{
+        padding-left: 95px;
+    }
+}
+
+
+
+@media all and (max-width: $extra-large){
+    .container{
+        flex-direction: column;
+        width: auto;
+        padding: 20px;
+        .col{
+            padding-left: 0px;
+        }
+    }
+}
