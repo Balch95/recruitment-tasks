@@ -34,8 +34,8 @@
         }
         
     }
+    
     .pop-up{
-        visibility: hidden;
         width: 920px;
         height: 210px;
         display: flex;
@@ -43,7 +43,6 @@
         flex-direction: column;
         background-color: #fff;
         position: absolute;
-        top: 10%;
         border: solid 1px black;
         padding: 56px 95px;
         z-index: 100;
