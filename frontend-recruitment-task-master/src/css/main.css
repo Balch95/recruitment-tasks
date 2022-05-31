@@ -53,22 +53,6 @@ body {
   margin: 32px 0px 24px 0px;
 }
 
-.main-content .content button {
-  color: #fff;
-  background-color: #E4C1AE;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 16px 40px;
-  border-radius: 32px;
-  border: none;
-}
-
-.main-content .content button:hover {
-  background-color: #eba580;
-  border: none;
-  cursor: pointer;
-}
-
 .main-content .pop-up {
   width: 920px;
   height: 210px;
@@ -107,6 +91,11 @@ body {
   font-weight: 700;
 }
 
+.main-content .pop-up button {
+  width: 128px;
+  height: 48px;
+}
+
 @media all and (max-width: 1440px) {
   .main-content .image img {
     max-height: 330px;
@@ -124,5 +113,21 @@ body {
     width: 250px;
     height: 140px;
   }
+}
+
+button {
+  color: #fff;
+  background-color: #E4C1AE;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 40px;
+  border-radius: 32px;
+  border: none;
+}
+
+button:hover {
+  background-color: #eba580;
+  border: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,14 @@
+button{
+    color: #fff;
+    background-color: $prima-color;
+    font-size: $basic-font-size;
+    font-weight: 700;
+    padding: 16px 40px;
+    border-radius: 32px;
+    border: none;
+    &:hover{
+        background-color: $prima-hover-color;
+        border: none;
+        cursor: pointer;
+    }
+}
