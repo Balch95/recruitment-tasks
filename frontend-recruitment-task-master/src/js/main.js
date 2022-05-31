@@ -54,7 +54,6 @@ document.getElementById("button").addEventListener("click", (e) => {
     document.getElementById("pop-up").style.visibility = "visible";
     buttonResetSet(clickValue);
     localStorage.setItem('click', clickValue);
-    console.log(clickValue)
 });
   
 document.addEventListener("click", () => {
@@ -65,7 +64,9 @@ document.addEventListener("click", () => {
 document.getElementById("pop-up").addEventListener("click", (e) => {
     e.stopPropagation();
 });
-
+document.getElementById("button").addEventListener("click", (e) => {
+    e.stopPropagation();
+});
 
 
 

@@ -1,0 +1,41 @@
+.pop-up{
+    max-width: 920px;
+    max-height: 310px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border: solid 1px black;
+    position: absolute;
+    top: 25%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 60px;
+    .x{
+        position: absolute;
+        top: 20%;
+        right: 7%;
+        font-size: 20px;
+        font-weight: 700;
+        &:hover{
+            color: rgb(88, 85, 85);
+            cursor: pointer;
+        }
+    }
+    h2{
+        font-size: 42px;
+    }
+    p{
+        font-size: $basic-font-size;
+        span{
+            font-weight: 700;
+        }
+    }
+    button{
+        width: 128px;
+        height: 48px;
+    }
+}
+

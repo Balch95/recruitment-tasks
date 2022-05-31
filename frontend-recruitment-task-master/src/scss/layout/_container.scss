@@ -1,22 +1,26 @@
 .container{
-    width: 1440px;
+    max-width: 1440px;
     display: flex;
     align-items: center;
-    padding: 96px 230px;
-    .col{
-        padding-left: 95px;
-    }
+    padding: 96px;
+    margin: auto;
+   .col{
+       padding: 40px;
+   }
 }
 
+@media all and (max-width: $large){
+    .container{
+        flex-direction: column;
+        }
+}
 
-
-@media all and (max-width: $extra-large){
+@media all and (max-width: $medium){
     .container{
         flex-direction: column;
         width: auto;
-        padding: 20px;
         .col{
-            padding-left: 0px;
+            padding: 10px;
         }
     }
 }
