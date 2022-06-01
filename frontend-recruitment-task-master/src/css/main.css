@@ -14,6 +14,13 @@ body {
 }
 
 .pop-up {
+  position: absolute;
+  width: 99%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.616);
+}
+
+.pop-up .popupelement {
   max-width: 920px;
   max-height: 310px;
   display: flex;
@@ -30,7 +37,7 @@ body {
   padding: 60px;
 }
 
-.pop-up .x {
+.pop-up .popupelement .x {
   position: absolute;
   top: 20%;
   right: 7%;
@@ -38,24 +45,24 @@ body {
   font-weight: 700;
 }
 
-.pop-up .x:hover {
+.pop-up .popupelement .x:hover {
   color: #585555;
   cursor: pointer;
 }
 
-.pop-up h2 {
+.pop-up .popupelement h2 {
   font-size: 42px;
 }
 
-.pop-up p {
+.pop-up .popupelement p {
   font-size: 16px;
 }
 
-.pop-up p span {
+.pop-up .popupelement p span {
   font-weight: 700;
 }
 
-.pop-up button {
+.pop-up .popupelement button {
   width: 128px;
   height: 48px;
 }
@@ -70,12 +77,6 @@ body {
 
 .container .col {
   padding: 40px;
-}
-
-@media all and (max-width: 1200px) {
-  .container {
-    flex-direction: column;
-  }
 }
 
 @media all and (max-width: 992px) {

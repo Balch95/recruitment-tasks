@@ -52,12 +52,14 @@ document.getElementById('reset').addEventListener('click', setValueReset);
 document.getElementById("button").addEventListener("click", (e) => {
     e.stopPropagation();
     document.getElementById("pop-up").style.visibility = "visible";
+    document.getElementById("pop-up-bg").style.visibility = "visible"
     buttonResetSet(clickValue);
     localStorage.setItem('click', clickValue);
 });
   
 document.addEventListener("click", () => {
-    document.getElementById("pop-up").style.visibility = 'hidden'
+    document.getElementById("pop-up").style.visibility = 'hidden';
+    document.getElementById("pop-up-bg").style.visibility = 'hidden';
     document.getElementById("reset").style.visibility = 'hidden';
 });
   
