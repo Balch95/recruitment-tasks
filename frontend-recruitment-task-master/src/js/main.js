@@ -12,11 +12,7 @@ const onClick = () =>{
 };
 
 
-const setValue = () =>{
-    clickValue = onClick();
-}
-
-document.getElementById('button').onclick = setValue;
+document.getElementById('button').onclick = onClick;
 
 // Reset button
 
@@ -37,13 +33,8 @@ const onClickResetValue = () => {
     return clickValue;
 }
 
-const setValueReset = () =>{
-    clickValue = onClickResetValue();
-}
 
-document.getElementById('reset').addEventListener('click', setValueReset);
-
-
+document.getElementById('reset').addEventListener('click', onClickResetValue);
 
 
 
@@ -51,6 +42,7 @@ document.getElementById('reset').addEventListener('click', setValueReset);
 
 document.getElementById("button").addEventListener("click", (e) => {
     e.stopPropagation();
+    document.getElementById("button").disabled = true
     document.getElementById("pop-up").style.visibility = "visible";
     document.getElementById("pop-up-bg").style.visibility = "visible"
     buttonResetSet(clickValue);
@@ -61,16 +53,19 @@ document.addEventListener("click", () => {
     document.getElementById("pop-up").style.visibility = 'hidden';
     document.getElementById("pop-up-bg").style.visibility = 'hidden';
     document.getElementById("reset").style.visibility = 'hidden';
+    document.getElementById("button").disabled = false;  
 });
   
 document.getElementById("pop-up").addEventListener("click", (e) => {
     e.stopPropagation();
 });
-document.getElementById("button").addEventListener("click", (e) => {
-    e.stopPropagation();
-});
 
 
+document.getElementById('pop-up-close').addEventListener('click', () =>{
+    document.getElementById("pop-up").style.visibility = 'hidden';
+    document.getElementById("pop-up-bg").style.visibility = 'hidden';
+    document.getElementById("reset").style.visibility = 'hidden';
+})
 
 
 
