@@ -2,9 +2,9 @@
 .pop-up{
     position: absolute;
     width: 99%;
-    min-height: 100%;
+    min-height: 99%;
     background-color: rgba(0, 0, 0, 0.616);
-    .popupelement{
+    .pop-up-element{
         max-width: 920px;
         max-height: 310px;
         display: flex;
@@ -35,6 +35,7 @@
         }
         p{
             font-size: $basic-font-size;
+            line-height: $basic-line-height;
             span{
                 font-weight: 700;
             }
