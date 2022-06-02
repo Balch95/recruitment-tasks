@@ -65,6 +65,7 @@ document.getElementById('pop-up-close').addEventListener('click', () =>{
     document.getElementById("pop-up").style.visibility = 'hidden';
     document.getElementById("pop-up-bg").style.visibility = 'hidden';
     document.getElementById("reset").style.visibility = 'hidden';
+    document.getElementById("button").disabled = false; 
 })
 
 
